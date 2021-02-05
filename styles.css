@@ -5,8 +5,9 @@
     --borderColor: #c1c1c1;
 
     --mainText: black;
-    --secondaryText: #4b5156: 
-    --previewBg: rgb(251, 249, 243, 0.8);
+    --secondaryText: #4b5156; 
+    --previewBg:rgb(251, 249, 243, 0.8);
+    --previewShadow: #f0ead6; 
 }
 
 
@@ -55,6 +56,21 @@ p, li, span, label, input, textfield {
       }
   }
 
+  @media screen and (max-width: 800px){
+	.intro-wrapper{
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+			'nav-wrapper'
+			'left-column'
+			'right-column'
+		;
+	}
+
+	.right-column{
+		justify-content: center;
+	}
+
+}
   .greeting-wrapper {
    display: grid; 
    min-height: 10em;
@@ -126,17 +142,26 @@ p, li, span, label, input, textfield {
 
   .left-column {
     grid-area: left-column;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .right-column {
     grid-area: right-column;
+    display: grid;
+    align-content: center;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   #preview {
     width: 300px;
+    height: 180px;
     border: 1.5px solid #17a2b8;
     background-color: var(--previewBg);
     padding: 15px;
+    position: relative;
   }
 
   #profile-pic {
@@ -151,4 +176,33 @@ p, li, span, label, input, textfield {
   .corner {
     width: 7px;
     height: 7px;
+    border-radius: 50%;
+    border: 1.5px solid #17a2b8;
+    background-color: #fff;
+    position: absolute;
+  }
+
+  #corner-tl {
+    top: -5px;
+    left: -5px;
+  }
+  #corner-tr {
+    top: -5px;
+    right: -5px;
+  }
+  #corner-bl {
+    bottom: -5px;
+    left: -5px;
+  }
+  #corner-br {
+    bottom: -5px;
+    right: -5px;
+  }
+
+  #preview-shadow {
+    background-color: var(--previewShadow);
+    width: 300px;
+    height: 180px;
+    padding-left: 30px;
+    padding-top: 30px;
   }
