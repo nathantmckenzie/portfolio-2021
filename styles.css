@@ -6,6 +6,7 @@
 
     --mainText: black;
     --secondaryText: #4b5156: 
+    --previewBg: rgb(251, 249, 243, 0.8);
 }
 
 
@@ -111,6 +112,16 @@ p, li, span, label, input, textfield {
     background-color: green;
   }
 
+  #navigation {
+    margin: 0px;
+    padding: 10px;
+  }
+
+  #navigation li{
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
 
 
   .left-column {
@@ -119,4 +130,25 @@ p, li, span, label, input, textfield {
 
   .right-column {
     grid-area: right-column;
+  }
+
+  #preview {
+    width: 300px;
+    border: 1.5px solid #17a2b8;
+    background-color: var(--previewBg);
+    padding: 15px;
+  }
+
+  #profile-pic {
+    display: block;
+    margin: 0 auto;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border: 2px solid var(--borderColor);
+  }
+
+  .corner {
+    width: 7px;
+    height: 7px;
   }
