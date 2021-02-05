@@ -56,7 +56,6 @@ p, li, span, label, input, textfield {
 
   .greeting-wrapper {
    display: grid; 
-   border: 2px dashed lightcoral;
    min-height: 10em;
    text-align: center;
    align-content: center;
@@ -64,6 +63,7 @@ p, li, span, label, input, textfield {
 
   .intro-wrapper {
     background-color: var(--secondaryColor);
+    border-radius: 5px 5px 0 0;
     border: 1px solid var(--borderColor);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); 
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -74,19 +74,49 @@ p, li, span, label, input, textfield {
     grid-template-areas:
     'nav-wrapper nav-wrapper'
     'left-column right-column'
-  }
+  } 
 
   .nav-wrapper {
+    border-radius: 5px 5px 0 0;
     grid-area: nav-wrapper;
-    border: 1px dashed lightcoral;
+    border-bottom: 1px solid var(--borderColor);
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--mainColor);
   }
+
+  .dots-wrapper {
+    display: flex;
+    padding: 10px;
+  }
+
+  .browser-dot {
+    background-color: black;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 5px;
+ 
+  }
+
+  #dot-1 {
+    background-color: red;
+  }
+
+  #dot-2 {
+    background-color: yellow;
+  }
+
+  #dot-3 {
+    background-color: green;
+  }
+
+
 
   .left-column {
     grid-area: left-column;
-    border: 1px dashed lightcoral;
   }
 
   .right-column {
     grid-area: right-column;
-    border: 1px dashed lightcoral;
   }
