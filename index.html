@@ -1,78 +1,206 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nathan McKenzie</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Nathan McKenzie</title>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet"> 
-    
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap" rel="stylesheet">
 
-    </head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link id="theme-style" rel="stylesheet" type="text/css" href="">
+</head>
 <body>
-    <section class="s1">
-        <div class="main-container">
-            <div class="greeting-wrapper">
-              <h1>Hi, I'm Nathan McKenzie</h1>
-            </div>
 
-            <div class="intro-wrapper">
-              <div class="nav-wrapper">
+	<section class="s1">
+		<div class="main-container">
+			<div class="greeting-wrapper">
+				<h1>Hi, I'm Nathan McKenzie</h1>
+			</div>
 
-                <a href="index.html">
-                  <div class="dots-wrapper">
-                     <div id="dot-1" class="browser-dot"></div>
-                     <div id="dot-2" class="browser-dot"></div>
-                     <div id="dot-3" class="browser-dot"></div>
-                  </div>
-                </a>
 
-                  <ul id="navigation">
-                    <li><a href="#">Contact</a></li>
-                  </ul>
-              </div>
+			<div class="intro-wrapper">
+				<div class="nav-wrapper">
 
-              <div class="left-column">
-                <img id="profile-pic" src="images/portfoliophoto.JPG">
-              </div>
+					<!-- Link around dots-wrapper added after tutorial video -->
+					<a href="index.html">
+						<div class="dots-wrapper">
+							<div id="dot-1" class="browser-dot"></div>
+							<div id="dot-2" class="browser-dot"></div>
+							<div id="dot-3" class="browser-dot"></div>
+						</div>
+					</a>
+					
 
-              <div class="right-column">
+					<ul id="navigation">
+                        <li><a href="index.html#projects">Projects</a></li>
+						<li><a href="index.html#contact">Contact</a></li>
 
-                 <div id="preview-shadow">
-                  <div id="preview">
-                     <div id="corner-tl" class="corner"></div>
-                     <div id="corner-tr" class="corner"></div>
-                     <h3>What I Do</h3>
-                     <p>Code = Life</p>
-                     <div id="corner-bl" class="corner"></div>
-                   <div id="corner-br" class="corner"></div>
-                 </div>
-                </div>
-              </div>
-            </div>
-        </div>
-    </section>
+					</ul>
+				</div>
 
-    <section class="s2">
-        <div class="main-container">
-            About
-        </div>
-    </section>
+				<div class="left-column">
+					<img id="profile_pic" src="images/portfoliophoto.JPG">
+					<h5 style="text-align: center;line-height: 0;"></h5>
 
-    <section class="s1">
-        <div class="main-container">
-            Portfolio
-        </div>
-    </section>
 
-    <section class="s2">
-        <div class="main-container">
-            Contact
-        </div>
-    </section>
+				</div>
+
+				<div class="right-column">
+
+					<div id="preview-shadow">
+						<div id="preview">
+							<div id="corner-tl" class="corner"></div>
+							<div id="corner-tr" class="corner"></div>
+							<h3>Who I Am</h3>
+							<p>Dedicated full-stack web developer trained in the latest technologies. Former sales representative in the tech industry with a passion for people and programming. Adept at working both independently and with teams. Highly adaptable when faced with new technologies and projects.</p>
+							<div id="corner-br" class="corner"></div>
+							<div id="corner-bl" class="corner"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="s2">
+		<div class="main-container">
+			<div class="about-wrapper">
+				<div class="about-me">
+					<h4>More about me</h4>
+
+					<p>I build new projects just to tickle my brain and love teaching others how they're made.</p>
+
+					<p>While I keep busy teaching courses, I still take interviews in search of a great team & projects that interest me.</p>
+
+
+					<hr>
+
+					<h4>TOP EXPERTISE</h4>
+
+					<p>Fullstack developer with primary focus on Django + React: <a target="_blank" href="resume.pdf">Download Resume</a></p>
+
+					<div id="skills">
+						<ul>
+							<li>JavaScript</li>
+                            <li>React</li>
+                            <li>Vue</li>
+                            <li>Python</li>
+							<li>Postgres</li>
+						</ul>
+
+						<ul>
+                            <li>Google Firebase</li>
+							<li>AWS (RDS/S3)</li>
+							<li>Heroku</li>
+							<li>HTML/CSS</li>
+						</ul>
+
+					</div>
+
+				</div>
+
+				
+				<div class="social-links">
+					<img id="social_img" src="images/linkedin.jpg">
+					<h3>Connect with Me on Linkedin</h3>
+
+					<a target="_blank" href="https://www.youtube.com/c/dennisivy">YouTube: @DennisIvy</a>
+					<br>
+					<a target="_blank" href="https://twitter.com/dennisivy11">Twitter: @DennisIvy11</a>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="s1">
+		<div class="main-container">
+            <a name="projects"></a>
+			<h3 style="text-align: center;">Some of my past projects</h3>
+
+			<div class="post-wrapper">
+
+				<div>
+					<div class="post">
+						<video width="318" height="240" autoplay loop muted>
+                            <source src="images/entropy-collab.mp4" type="video/mp4">
+                            <source src="movie.ogg" type="video/ogg">
+                          Your browser does not support the video tag.
+                          </video>
+						<div class="post-preview">
+							<h6 class="post-title">Entropy</h6>
+							<p class="post-intro">My final project at Lighthouse Labs is a flow chart editor with real-time collaboration. Entropy was built using React, React Flow, Yjs, Firebase/Firestore, and Material UI. Users are able to create flow chart diagrams and share and edit them with others, all in real-time.</p>
+                            <a target="_blank" href="https://legendary-octo-chainsaw.onrender.com">Check It Out!</a>
+                            <br>
+                            <br>
+                            <a target="_blank" href="https://github.com/nathantmckenzie/legendary-octo-chainsaw">Github Repo</a>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="post">
+						<video width="318" height="240" autoplay loop muted>
+                            <source src="images/tweeter.mp4" type="video/mp4">
+                            <source src="movie.ogg" type="video/ogg">
+                          Your browser does not support the video tag.
+                          </video>
+						<div class="post-preview">
+							<h6 class="post-title">Tweeter</h6>
+							<p class="post-intro">Tweeter is a simple, single-page Twitter clone. This SPA was built HTML, CSS, Javascript, and jQuery on the front end, and Node.JS and Express on the back end. Users are able to post tweets and view their past tweets. Tweeter provides user interfaces that are tailored to both desktop and mobile users.</p>
+							<a target="_blank" href="https://github.com/nathantmckenzie/tweeter">Github Repo</a>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="post">
+						<video width="318" height="240" autoplay loop muted>
+                            <source src="images/tiny-app.mp4" type="video/mp4">
+                            <source src="movie.ogg" type="video/ogg">
+                          Your browser does not support the video tag.
+                          </video>
+						<div class="post-preview">
+							<h6 class="post-title">Tiny App</h6>
+							<p class="post-intro">TinyApp is a full stack web application built with Node and Express that allows users to shorten long URLs (à la bit.ly).</p>
+							<a target="_blank" href="https://github.com/nathantmckenzie/tinyapp">Github Repo</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="s2">
+		<div class="main-container">
+			<a href=""></a>
+			<h3 style="text-align: center;">Get In Touch</h3>
+
+			<form id="contact-form">
+				<a name="contact"></a>
+
+				<label>Name</label>
+				<input class="input-field" type="text" name="name">
+
+				<label>Subject</label>
+				<input class="input-field" type="text" name="subject">
+
+				<label>Email</label>
+				<input class="input-field" type="text" name="email">
+
+				<label>Message</label>
+				<textarea class="input-field" name="message"></textarea>
+
+				<input id="submit-btn" type="submit" value="Send">
+			</form>
+		</div>
+	</section> 
+
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
