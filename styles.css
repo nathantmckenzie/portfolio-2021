@@ -1,0 +1,60 @@
+:root {
+    --mainColor: #eaeaea;
+    --secondaryColor: #fff;
+
+    --borderColor: #c1c1c1;
+
+    --mainText: black;
+    --secondaryText: #4b5156: 
+}
+
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+  color: var(--mainText);
+  font-family: 'Montserrat', sans-serif;
+}
+
+p, li, span, label, input, textfield {
+  color: var(--secondaryText);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.s1 {
+  background-color: var(--mainColor);
+  border-bottom: 1px solid var(--borderColor);
+}
+
+.s2 {
+    background-color: var(--secondaryColor);
+    border-bottom: 1px solid var(--borderColor);
+  }
+
+  a{
+      text-decoration: none;
+      color: #17a2b8;
+  }
+
+  ul {
+      list-style: none;
+  }
+
+  .main-container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .main-container {
+        width: 95%;
+      }
+  }
+
+  .introduction {
+   display: flex; 
+   justify-content: center;
+  }
