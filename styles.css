@@ -54,7 +54,39 @@ p, li, span, label, input, textfield {
       }
   }
 
-  .introduction {
-   display: flex; 
-   justify-content: center;
+  .greeting-wrapper {
+   display: grid; 
+   border: 2px dashed lightcoral;
+   min-height: 10em;
+   text-align: center;
+   align-content: center;
+  }
+
+  .intro-wrapper {
+    background-color: var(--secondaryColor);
+    border: 1px solid var(--borderColor);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); 
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3em 30em;
+    grid-template-areas:
+    'nav-wrapper nav-wrapper'
+    'left-column right-column'
+  }
+
+  .nav-wrapper {
+    grid-area: nav-wrapper;
+    border: 1px dashed lightcoral;
+  }
+
+  .left-column {
+    grid-area: left-column;
+    border: 1px dashed lightcoral;
+  }
+
+  .right-column {
+    grid-area: right-column;
+    border: 1px dashed lightcoral;
   }
