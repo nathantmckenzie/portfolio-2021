@@ -427,3 +427,10 @@ h6 {
     width: 280px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .post-wrapper {
+    grid-template-columns: 320px;
+    justify-content: center;
+  }
+}
